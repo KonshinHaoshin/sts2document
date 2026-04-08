@@ -1,0 +1,12 @@
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/favicon01.png
+  Cache-Control: public, max-age=86400
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+

@@ -45,6 +45,37 @@ npm run docs:build
 npm run docs:preview
 ```
 
+## 部署到 Cloudflare Pages
+
+这个目录已经补好了 Cloudflare Pages 的基础配置，直接适合拿去部署静态站。
+
+### 已添加的配置
+
+- `document/wrangler.toml`：声明 Pages 构建输出目录为 `.vitepress/dist`
+- `document/public/_headers`：给 HTML、图标和打包后的静态资源设置缓存策略
+- `document/public/_redirects`：补充少量静态回退与友好路径跳转规则
+
+### Cloudflare Pages 推荐设置
+
+- Framework preset：`None`
+- Build command：`npm run docs:build`
+- Build output directory：`document/.vitepress/dist`
+- Root directory：`document`
+
+如果你是在 Git 仓库里直接连接 Cloudflare Pages，最稳妥的做法是把项目根目录设为 `document`。这样：
+
+- 安装依赖会在 `document/package.json` 所在目录执行
+- 构建命令不需要再额外切目录
+- 输出目录直接填写 `.vitepress/dist` 即可
+
+### Node 版本建议
+
+建议在 Cloudflare Pages 项目环境变量里设置：
+
+- `NODE_VERSION=20`
+
+这样能避免构建环境过旧导致的 VitePress / ESM 问题。
+
 ## 当前文档结构
 
 - `document/index.md`：首页
