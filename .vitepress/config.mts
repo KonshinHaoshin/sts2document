@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+﻿import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
@@ -54,6 +54,7 @@ export default defineConfig({
             { text: 'Texture Pack 模板', link: '/modding/texture-pack-template' },
             { text: '开发工作流', link: '/modding/modding-workflow' },
             { text: 'PCK Mod', link: '/modding/pck-modding' },
+            { text: 'PCK 重打包与排查', link: '/modding/pck-rebuild-and-debug' },
             { text: 'DLL Mod', link: '/modding/dll-modding' },
             { text: '调试与风险', link: '/modding/debugging-and-risks' }
           ]
@@ -72,3 +73,4 @@ export default defineConfig({
     }
   }
 })
+

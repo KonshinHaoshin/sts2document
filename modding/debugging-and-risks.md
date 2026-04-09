@@ -17,3 +17,7 @@ PCK 覆盖时路径不一致是最常见问题。
 ### Spine 版本不兼容
 
 当前导出的大量 `skel` 是 4.2.x，使用 3.8 编辑器会报 `EOFException`。
+## 推荐继续阅读
+
+- [PCK 重打包与不生效排查](./pck-rebuild-and-debug.md)
+
