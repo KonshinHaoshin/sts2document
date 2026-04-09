@@ -51,6 +51,7 @@ export default defineConfig({
           items: [
             { text: 'Mod 概览', link: '/modding/mod-overview' },
             { text: '当前模组布局', link: '/modding/current-mod-layout' },
+            { text: 'Texture Pack 模板', link: '/modding/texture-pack-template' },
             { text: '开发工作流', link: '/modding/modding-workflow' },
             { text: 'PCK Mod', link: '/modding/pck-modding' },
             { text: 'DLL Mod', link: '/modding/dll-modding' },
