@@ -1,4 +1,4 @@
-﻿import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
@@ -14,7 +14,7 @@ export default defineConfig({
       { text: '入门', link: '/guide/getting-started' },
       { text: '项目分析', link: '/analysis/runtime-architecture' },
       { text: 'Mod 制作', link: '/modding/mod-overview' },
-      { text: '参考', link: '/reference/file-map' },
+      { text: '下载', link: '/reference/downloads' },
       { text: 'GitHub', link: 'https://github.com/KonshinHaoshin/sts2document' },
       { text: 'B站', link: 'https://space.bilibili.com/296330875' }
     ],
@@ -64,8 +64,7 @@ export default defineConfig({
         {
           text: '参考',
           items: [
-            { text: '文件地图', link: '/reference/file-map' },
-            { text: '已知限制', link: '/reference/known-limitations' },
+            { text: '下载', link: '/reference/downloads' },
             { text: '术语表', link: '/reference/glossary' }
           ]
         }
